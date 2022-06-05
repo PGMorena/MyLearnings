@@ -7,6 +7,7 @@ nameMap.put('Pooja','Gupta');
 nameMap.put('Utkarsh','Singh');
 nameMap.put('Tanishka','Gupta');
 System.debug('nameMap->'+nameMap);
+System.debug('Rakesh surname->'+nameMap.get('Rakesh'));
 ```
 # Access Keys and Values
 ```
