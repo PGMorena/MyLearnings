@@ -60,3 +60,33 @@ String BananaCheck = lst.contains('banana')? 'Yes banana is there': 'No, banana 
 System.debug(GuvaCheck);
 System.debug(BananaCheck);
 ```
+# Empty Check
+```
+List<String> lst = new List<String>();
+/*lst.add('apple');
+lst.add('banana');
+lst.add('orange');*/
+if(!lst.isEmpty()){
+    String GuvaCheck = lst.contains('guava')? 'Yes guava is there': 'No, Guava is not there';
+    String BananaCheck = lst.contains('banana')? 'Yes banana is there': 'No, banana is not there';
+    System.debug(GuvaCheck);
+    System.debug(BananaCheck);
+}else{
+    System.debug('There is nothing in the list');
+}
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
