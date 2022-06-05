@@ -44,6 +44,5 @@ System.debug('familyKey->'+familyKey);
 
 List<List<String>> familyValues= familyMap.values();
 System.debug('familyValues->'+familyValues);
-List<list<String>> families = familyMap.values();
-System.debug('families->'+families);
+
 ```
