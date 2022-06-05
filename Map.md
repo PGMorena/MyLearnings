@@ -24,3 +24,21 @@ System.debug('LastNameExistFromMap->'+nameExist);
 Boolean LastNameExistFromList= LastName.contains('Gupta');
 System.debug('LastNameExistFromList->'+nameExist);
 ```
+# Map of string and list of string
+Map<String,List<String>> familyMap = new Map<String,List<String>>();
+List<String> RakeshfamilyValue = new List<String>();
+RakeshfamilyValue.add('Priyanka');
+RakeshfamilyValue.add('Roushan');
+List<String> PriyankafamilyValue = new List<String>();
+PriyankafamilyValue.add('Udit');
+PriyankafamilyValue.add('Utkarsh');
+  
+familyMap.put('Rakesh',RakeshfamilyValue);
+familyMap.put('Priyanka',PriyankafamilyValue);
+System.debug('familyMap->'+familyMap);
+
+Set<String> familyKey= familyMap.keySet();
+System.debug('familyKey->'+familyKey);
+
+List<List<String>> familyValues= familyMap.values();
+System.debug('familyValues->'+familyValues);
