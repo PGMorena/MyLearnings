@@ -63,3 +63,19 @@ for(Contact con: conList){
     }   
 }
 ```
+# Map with account id and no. of contacts
+```
+Map<Id, Integer> contactMap = new Map<Id, Integer>();
+List<Contact> conList = [Select Id, accountId from Contact];
+for(Contact con: conList){
+    if(!contactMap.containsKey(con.AccountId)){
+           // List<Contact> newConList = new List<Contact>();
+           // newConList.add(con);
+            contactMap.put(con.AccountId, 1);
+    }else{
+        //List<Contact> existingConList = contactMap.get(con.AccountId);
+       // existingConList.add(con);
+         contactMap.put(con.AccountId, contactMap.get(con.AccountId)+1);
+    }   
+}
+```
