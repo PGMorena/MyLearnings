@@ -21,7 +21,7 @@ you're already processing that record, you'll get an immediate recursion error
 ```
 # When to use before.insert and when to use after. insert
 ```
-If you want to update any fields values then you should use before.insert as in after.insert the fields are in readonly mode. for ex:
+If you want to update any fields values on the same object then you should use before.insert as in after.insert the fields are in readonly mode. for ex:
 I want to update the billing address when an account is inserted. So, here we need to use before.insert
 ```
 ```
