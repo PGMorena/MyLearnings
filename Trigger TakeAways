@@ -1,1 +1,7 @@
-#Trigger TakeAways
+# Trigger Take Away
+
+```
+# Error: DML statement cannot operate on Trigger.new or Trigger.old
+
+
+```
