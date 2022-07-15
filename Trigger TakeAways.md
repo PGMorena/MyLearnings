@@ -29,3 +29,7 @@ We are using ” before insert ” because we need to change the values of the a
 the fields of the account we are inserting will become read-only and we will not be able to update that account. This is the reason we are using ” 
 before insert “.
 ```
+# after Update
+```
+when we are updating object 1 and wants to update fields of object 2 in that case we will use after update.
+```
