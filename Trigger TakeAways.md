@@ -1,8 +1,8 @@
 # Trigger Take Away
 
-```
 # Error: DML statement cannot operate on Trigger.new or Trigger.old
 
+```
 Solution: Remove the update DML statement at the end. By using the "before" trigger to modify the Trigger.new objects, you don't need to explicitly perform an update DML statement. When the trigger ends, it will implicitly update the data as you have modified the values.
 
 Explanation: Trigger.old represents the data as it was loaded from the database. It does not represent data that will be saved to the database. As such, it is immutable (cannot be modified). Trigger.new reflects what the database will look like; in a before DML event, you can modify these values to alter what will be saved to the database, but in after DML events, the data is already saved and cannot be modified further (by code, anyways, as Workflow Rules can cause a recursive update).
