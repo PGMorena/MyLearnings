@@ -81,6 +81,23 @@ for(Contact con: conList){
 ```
 # Count the number of occrurence of the integers
 ```
+#correct way
+List<Integer> intList =new List<Integer>{1,2,3,1,1,2};
+Map<Integer, Integer> intMap = new Map<Integer, Integer>();
+ for(Integer i:intList){
+if(!intMap.containsKey(i)){
+       intMap.put(i,1);
+     }
+   else{
+        Integer count = intMap.get(i);
+        count++;
+          intMap.put(i,count);
+    }
+    
+     System.debug('intMap'+intMap);
+ }
+```
+```
 List<Integer> intList =new List<Integer>{1,2,3,1,1,2};
 Map<Integer, Integer> intMap = new Map<Integer, Integer>();
  //count=0;
