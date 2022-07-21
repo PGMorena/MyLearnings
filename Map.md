@@ -92,3 +92,20 @@ if(!intMap.containsKey(i)){
      intMap.put(i,count);
  }
 ```
+
+#Another way
+```
+List<Integer> intList =new List<Integer>{1,2,3,1,1,2};
+Map<Integer, Integer> intMap = new Map<Integer, Integer>();
+ //count=0;
+for(Integer i:intList){
+if(!intMap.containsKey(i)){
+       intMap.put(i,0);
+     }
+    if(intMap.containsKey(i)){
+        Integer count = intMap.get(i)+1;
+        intMap.put(i,count);
+        System.debug('intMap'+intMap);
+    }
+ }
+```
